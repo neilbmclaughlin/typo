@@ -27,13 +27,13 @@ source 'https://rubygems.org'
 ruby "1.9.2"
 
 gem 'thin'
-gem 'rails', '~> 3.0.10'
+gem 'rails', '~> 5.2.4', '>= 5.2.4.3'
 gem 'require_relative'
 gem 'htmlentities'
 gem 'json'
 gem 'bluecloth', '~> 2.1'
 gem 'coderay', '~> 0.9'
-gem 'kaminari'
+gem 'kaminari', '>= 0.14.1'
 gem 'RedCloth', '~> 4.2.8'
 gem 'addressable', '~> 2.1', :require => 'addressable/uri'
 gem 'mini_magick', '~> 1.3.3', :require => 'mini_magick'
@@ -47,9 +47,9 @@ gem 'recaptcha', :require => 'recaptcha/rails', :branch => 'rails3'
 
 group :development, :test do
   gem 'ruby-debug19'
-  gem 'factory_girl', '~> 2.2'
+  gem 'factory_girl', '~> 2.6', '>= 2.6.4'
   gem 'webrat'
-  gem 'rspec-rails', '~> 2.0'
+  gem 'rspec-rails', '~> 2.11', '>= 2.11.0'
   gem 'simplecov', :require => false
   gem 'sqlite3'
   gem 'cucumber'
