@@ -52,9 +52,9 @@ group :development, :test do
   gem 'rspec-rails', '~> 2.0'
   gem 'simplecov', :require => false
   gem 'sqlite3'
-  gem 'cucumber'
-  gem 'cucumber-rails', :require => false
-  gem 'cucumber-rails-training-wheels'
+  gem 'cucumber', '>= 4.0.0'
+  gem 'cucumber-rails', '>= 1.3.0', :require => false
+  gem 'cucumber-rails-training-wheels', '>= 1.0.0'
   gem 'database_cleaner'
   gem 'capybara'
 end
