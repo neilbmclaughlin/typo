@@ -48,13 +48,13 @@ gem 'recaptcha', :require => 'recaptcha/rails', :branch => 'rails3'
 group :development, :test do
   gem 'ruby-debug19'
   gem 'factory_girl', '~> 2.2'
-  gem 'webrat'
+  gem 'webrat', '>= 0.7.3'
   gem 'rspec-rails', '~> 2.0'
   gem 'simplecov', :require => false
   gem 'sqlite3'
   gem 'cucumber'
-  gem 'cucumber-rails', :require => false
-  gem 'cucumber-rails-training-wheels'
+  gem 'cucumber-rails', '>= 1.3.0', :require => false
+  gem 'cucumber-rails-training-wheels', '>= 1.0.0'
   gem 'database_cleaner'
-  gem 'capybara'
+  gem 'capybara', '>= 1.1.2'
 end
