@@ -27,7 +27,7 @@ source 'https://rubygems.org'
 ruby "1.9.2"
 
 gem 'thin'
-gem 'rails', '~> 3.0.10'
+gem 'rails', '~> 4.0.0'
 gem 'require_relative'
 gem 'htmlentities'
 gem 'json'
@@ -35,7 +35,7 @@ gem 'bluecloth', '~> 2.1'
 gem 'coderay', '~> 0.9'
 gem 'kaminari'
 gem 'RedCloth', '~> 4.2.8'
-gem 'addressable', '~> 2.1', :require => 'addressable/uri'
+gem 'addressable', '~> 2.8', '>= 2.8.0', :require => 'addressable/uri'
 gem 'mini_magick', '~> 1.3.3', :require => 'mini_magick'
 gem 'uuidtools', '~> 2.1.1'
 gem 'flickraw-cached'
@@ -49,12 +49,12 @@ group :development, :test do
   gem 'ruby-debug19'
   gem 'factory_girl', '~> 2.2'
   gem 'webrat'
-  gem 'rspec-rails', '~> 2.0'
+  gem 'rspec-rails', '~> 2.11', '>= 2.11.0'
   gem 'simplecov', :require => false
   gem 'sqlite3'
   gem 'cucumber'
-  gem 'cucumber-rails', :require => false
-  gem 'cucumber-rails-training-wheels'
+  gem 'cucumber-rails', '>= 1.3.0', :require => false
+  gem 'cucumber-rails-training-wheels', '>= 1.0.0'
   gem 'database_cleaner'
-  gem 'capybara'
+  gem 'capybara', '>= 1.1.2'
 end
